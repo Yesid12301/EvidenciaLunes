@@ -1,0 +1,91 @@
+C:\Users\Sena CSET\Documents\Tienda Naturista\obj\Debug\Tienda Naturista.csproj.AssemblyReference.cache
+C:\Users\Sena CSET\Documents\Tienda Naturista\obj\Debug\Tienda Naturista.csproj.SuggestedBindingRedirects.cache
+C:\Users\Sena CSET\Documents\Tienda Naturista\obj\Debug\Tienda_Naturista.Form1.resources
+C:\Users\Sena CSET\Documents\Tienda Naturista\obj\Debug\Tienda_Naturista.Properties.Resources.resources
+C:\Users\Sena CSET\Documents\Tienda Naturista\obj\Debug\Tienda Naturista.csproj.GenerateResource.cache
+C:\Users\Sena CSET\Documents\Tienda Naturista\obj\Debug\Tienda Naturista.csproj.CoreCompileInputs.cache
+C:\Users\Sena CSET\Documents\Tienda Naturista\bin\Debug\Tienda Naturista.exe.config
+C:\Users\Sena CSET\Documents\Tienda Naturista\bin\Debug\Tienda Naturista.exe
+C:\Users\Sena CSET\Documents\Tienda Naturista\bin\Debug\Tienda Naturista.pdb
+C:\Users\Sena CSET\Documents\Tienda Naturista\bin\Debug\CapaEntidades.dll
+C:\Users\Sena CSET\Documents\Tienda Naturista\bin\Debug\CapaNegocios.dll
+C:\Users\Sena CSET\Documents\Tienda Naturista\bin\Debug\CapaDatos.dll
+C:\Users\Sena CSET\Documents\Tienda Naturista\bin\Debug\CapaEntidades.pdb
+C:\Users\Sena CSET\Documents\Tienda Naturista\bin\Debug\CapaNegocios.pdb
+C:\Users\Sena CSET\Documents\Tienda Naturista\bin\Debug\CapaDatos.pdb
+C:\Users\Sena CSET\Documents\Tienda Naturista\obj\Debug\Tienda Naturista.csproj.CopyComplete
+C:\Users\Sena CSET\Documents\Tienda Naturista\obj\Debug\Tienda Naturista.exe
+C:\Users\Sena CSET\Documents\Tienda Naturista\obj\Debug\Tienda Naturista.pdb
+C:\Users\Sena CSET\Documents\Tienda Naturista\obj\Debug\Tienda_Naturista.Gestion.resources
+C:\Users\Sena CSET\Documents\Tienda Naturista\obj\Debug\Tienda_Naturista.Gestion_Productos.resources
+C:\Users\Sena CSET\Documents\Tienda Naturista\obj\Debug\Tienda_Naturista.Factura.resources
+C:\Users\Sena CSET\Desktop\Tienda\Tienda Naturista\bin\Debug\Tienda Naturista.exe.config
+C:\Users\Sena CSET\Desktop\Tienda\Tienda Naturista\bin\Debug\Tienda Naturista.exe
+C:\Users\Sena CSET\Desktop\Tienda\Tienda Naturista\bin\Debug\Tienda Naturista.pdb
+C:\Users\Sena CSET\Desktop\Tienda\Tienda Naturista\bin\Debug\CapaEntidades.dll
+C:\Users\Sena CSET\Desktop\Tienda\Tienda Naturista\bin\Debug\CapaNegocios.dll
+C:\Users\Sena CSET\Desktop\Tienda\Tienda Naturista\bin\Debug\CapaDatos.dll
+C:\Users\Sena CSET\Desktop\Tienda\Tienda Naturista\bin\Debug\CapaEntidades.pdb
+C:\Users\Sena CSET\Desktop\Tienda\Tienda Naturista\bin\Debug\CapaNegocios.pdb
+C:\Users\Sena CSET\Desktop\Tienda\Tienda Naturista\bin\Debug\CapaDatos.pdb
+C:\Users\Sena CSET\Desktop\Tienda\Tienda Naturista\obj\Debug\Tienda Naturista.csproj.AssemblyReference.cache
+C:\Users\Sena CSET\Desktop\Tienda\Tienda Naturista\obj\Debug\Tienda Naturista.csproj.SuggestedBindingRedirects.cache
+C:\Users\Sena CSET\Desktop\Tienda\Tienda Naturista\obj\Debug\Tienda_Naturista.Factura.resources
+C:\Users\Sena CSET\Desktop\Tienda\Tienda Naturista\obj\Debug\Tienda_Naturista.Gestion_Clientes.resources
+C:\Users\Sena CSET\Desktop\Tienda\Tienda Naturista\obj\Debug\Tienda_Naturista.Gestion_Inventario.resources
+C:\Users\Sena CSET\Desktop\Tienda\Tienda Naturista\obj\Debug\Tienda_Naturista.Using.resources
+C:\Users\Sena CSET\Desktop\Tienda\Tienda Naturista\obj\Debug\Tienda_Naturista.Gestion.resources
+C:\Users\Sena CSET\Desktop\Tienda\Tienda Naturista\obj\Debug\Tienda_Naturista.Gestion_Productos.resources
+C:\Users\Sena CSET\Desktop\Tienda\Tienda Naturista\obj\Debug\Tienda_Naturista.Properties.Resources.resources
+C:\Users\Sena CSET\Desktop\Tienda\Tienda Naturista\obj\Debug\Tienda Naturista.csproj.GenerateResource.cache
+C:\Users\Sena CSET\Desktop\Tienda\Tienda Naturista\obj\Debug\Tienda Naturista.csproj.CoreCompileInputs.cache
+C:\Users\Sena CSET\Desktop\Tienda\Tienda Naturista\obj\Debug\Tienda Naturista.csproj.CopyComplete
+C:\Users\Sena CSET\Desktop\Tienda\Tienda Naturista\obj\Debug\Tienda Naturista.exe
+C:\Users\Sena CSET\Desktop\Tienda\Tienda Naturista\obj\Debug\Tienda Naturista.pdb
+C:\Users\omar1\OneDrive\Escritorio\Tienda\Tienda Naturista\bin\Debug\Tienda Naturista.exe.config
+C:\Users\omar1\OneDrive\Escritorio\Tienda\Tienda Naturista\bin\Debug\Tienda Naturista.exe
+C:\Users\omar1\OneDrive\Escritorio\Tienda\Tienda Naturista\bin\Debug\Tienda Naturista.pdb
+C:\Users\omar1\OneDrive\Escritorio\Tienda\Tienda Naturista\bin\Debug\CapaEntidades.dll
+C:\Users\omar1\OneDrive\Escritorio\Tienda\Tienda Naturista\bin\Debug\CapaNegocios.dll
+C:\Users\omar1\OneDrive\Escritorio\Tienda\Tienda Naturista\bin\Debug\CapaDatos.dll
+C:\Users\omar1\OneDrive\Escritorio\Tienda\Tienda Naturista\bin\Debug\CapaEntidades.pdb
+C:\Users\omar1\OneDrive\Escritorio\Tienda\Tienda Naturista\bin\Debug\CapaNegocios.pdb
+C:\Users\omar1\OneDrive\Escritorio\Tienda\Tienda Naturista\bin\Debug\CapaDatos.pdb
+C:\Users\omar1\OneDrive\Escritorio\Tienda\Tienda Naturista\obj\Debug\Tienda Naturista.csproj.AssemblyReference.cache
+C:\Users\omar1\OneDrive\Escritorio\Tienda\Tienda Naturista\obj\Debug\Tienda Naturista.csproj.SuggestedBindingRedirects.cache
+C:\Users\omar1\OneDrive\Escritorio\Tienda\Tienda Naturista\obj\Debug\Tienda_Naturista.Factura.resources
+C:\Users\omar1\OneDrive\Escritorio\Tienda\Tienda Naturista\obj\Debug\Tienda_Naturista.Gestion_Clientes.resources
+C:\Users\omar1\OneDrive\Escritorio\Tienda\Tienda Naturista\obj\Debug\Tienda_Naturista.Gestion_Inventario.resources
+C:\Users\omar1\OneDrive\Escritorio\Tienda\Tienda Naturista\obj\Debug\Tienda_Naturista.Using.resources
+C:\Users\omar1\OneDrive\Escritorio\Tienda\Tienda Naturista\obj\Debug\Tienda_Naturista.Gestion.resources
+C:\Users\omar1\OneDrive\Escritorio\Tienda\Tienda Naturista\obj\Debug\Tienda_Naturista.Gestion_Productos.resources
+C:\Users\omar1\OneDrive\Escritorio\Tienda\Tienda Naturista\obj\Debug\Tienda_Naturista.Properties.Resources.resources
+C:\Users\omar1\OneDrive\Escritorio\Tienda\Tienda Naturista\obj\Debug\Tienda Naturista.csproj.GenerateResource.cache
+C:\Users\omar1\OneDrive\Escritorio\Tienda\Tienda Naturista\obj\Debug\Tienda Naturista.csproj.CoreCompileInputs.cache
+C:\Users\omar1\OneDrive\Escritorio\Tienda\Tienda Naturista\obj\Debug\Tienda Naturista.csproj.CopyComplete
+C:\Users\omar1\OneDrive\Escritorio\Tienda\Tienda Naturista\obj\Debug\Tienda Naturista.exe
+C:\Users\omar1\OneDrive\Escritorio\Tienda\Tienda Naturista\obj\Debug\Tienda Naturista.pdb
+F:\Programacion\C#\PROYECTOS_MIOS\GRAFICA\Tienda\Tienda Naturista\bin\Debug\Tienda Naturista.exe.config
+F:\Programacion\C#\PROYECTOS_MIOS\GRAFICA\Tienda\Tienda Naturista\bin\Debug\Tienda Naturista.exe
+F:\Programacion\C#\PROYECTOS_MIOS\GRAFICA\Tienda\Tienda Naturista\bin\Debug\Tienda Naturista.pdb
+F:\Programacion\C#\PROYECTOS_MIOS\GRAFICA\Tienda\Tienda Naturista\bin\Debug\CapaEntidades.dll
+F:\Programacion\C#\PROYECTOS_MIOS\GRAFICA\Tienda\Tienda Naturista\bin\Debug\CapaNegocios.dll
+F:\Programacion\C#\PROYECTOS_MIOS\GRAFICA\Tienda\Tienda Naturista\bin\Debug\CapaDatos.dll
+F:\Programacion\C#\PROYECTOS_MIOS\GRAFICA\Tienda\Tienda Naturista\bin\Debug\CapaEntidades.pdb
+F:\Programacion\C#\PROYECTOS_MIOS\GRAFICA\Tienda\Tienda Naturista\bin\Debug\CapaNegocios.pdb
+F:\Programacion\C#\PROYECTOS_MIOS\GRAFICA\Tienda\Tienda Naturista\bin\Debug\CapaDatos.pdb
+F:\Programacion\C#\PROYECTOS_MIOS\GRAFICA\Tienda\Tienda Naturista\obj\Debug\Tienda Naturista.csproj.AssemblyReference.cache
+F:\Programacion\C#\PROYECTOS_MIOS\GRAFICA\Tienda\Tienda Naturista\obj\Debug\Tienda Naturista.csproj.SuggestedBindingRedirects.cache
+F:\Programacion\C#\PROYECTOS_MIOS\GRAFICA\Tienda\Tienda Naturista\obj\Debug\Tienda_Naturista.Factura.resources
+F:\Programacion\C#\PROYECTOS_MIOS\GRAFICA\Tienda\Tienda Naturista\obj\Debug\Tienda_Naturista.Gestion_Clientes.resources
+F:\Programacion\C#\PROYECTOS_MIOS\GRAFICA\Tienda\Tienda Naturista\obj\Debug\Tienda_Naturista.Gestion_Inventario.resources
+F:\Programacion\C#\PROYECTOS_MIOS\GRAFICA\Tienda\Tienda Naturista\obj\Debug\Tienda_Naturista.Using.resources
+F:\Programacion\C#\PROYECTOS_MIOS\GRAFICA\Tienda\Tienda Naturista\obj\Debug\Tienda_Naturista.Gestion.resources
+F:\Programacion\C#\PROYECTOS_MIOS\GRAFICA\Tienda\Tienda Naturista\obj\Debug\Tienda_Naturista.Gestion_Productos.resources
+F:\Programacion\C#\PROYECTOS_MIOS\GRAFICA\Tienda\Tienda Naturista\obj\Debug\Tienda_Naturista.Properties.Resources.resources
+F:\Programacion\C#\PROYECTOS_MIOS\GRAFICA\Tienda\Tienda Naturista\obj\Debug\Tienda Naturista.csproj.GenerateResource.cache
+F:\Programacion\C#\PROYECTOS_MIOS\GRAFICA\Tienda\Tienda Naturista\obj\Debug\Tienda Naturista.csproj.CoreCompileInputs.cache
+F:\Programacion\C#\PROYECTOS_MIOS\GRAFICA\Tienda\Tienda Naturista\obj\Debug\Tienda Naturista.csproj.CopyComplete
+F:\Programacion\C#\PROYECTOS_MIOS\GRAFICA\Tienda\Tienda Naturista\obj\Debug\Tienda Naturista.exe
+F:\Programacion\C#\PROYECTOS_MIOS\GRAFICA\Tienda\Tienda Naturista\obj\Debug\Tienda Naturista.pdb
+F:\Programacion\C#\PROYECTOS_MIOS\GRAFICA\Tienda\Tienda Naturista\obj\Debug\Tienda_Naturista.Gestion_Vendedores.resources
