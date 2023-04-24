@@ -172,6 +172,7 @@ CREATE PROC SP_INSERTARPRODUCT
 @Cantida INT
 AS
 INSERT INTO Productos VALUES(@Codigo,@Descri,@ValUnd,@Cantida)
+go
 --Consultar 
 create proc BuscarTodosproductos
 as 
@@ -195,6 +196,7 @@ CREATE PROC SP_ACTUALIZARPROD
 AS
 UPDATE Productos SET Codigo =@CodNew, Descripción = @Descri, Valor_Unidad = @ValUnd,Cantidad = @Cant
 WHERE Codigo = @Cod
+go
 
 --ELIMINAR
 CREATE PROC SP_ELIMINARPROD
@@ -202,6 +204,7 @@ CREATE PROC SP_ELIMINARPROD
 AS
 DELETE Productos
 WHERE Codigo = @Cod
+go
 
 --Tabla Clientes Procedimientos Almacenados
 
@@ -214,7 +217,8 @@ CREATE PROC SP_INSERTARCLIENT
 @Corr VARCHAR(250)
 AS
 INSERT INTO Cliente VALUES(@Docu,@Nombre,@Direccion,@Tel,@Corr)
-exec SP_INSERTARCLIENT 1005199720,'Omar Moya','Cll32c','3016721141','omar12@gmail.com'
+go
+
 --ACTUALIZAR
 CREATE PROC SP_ACTUALCLIENT
 @Docu INT,
@@ -226,6 +230,7 @@ CREATE PROC SP_ACTUALCLIENT
 AS
 UPDATE Cliente SET Documento = @DocuNew,Nombre = @Nombre,Direccion = @Direccion,Telefono = @Tel,Correo = @Corr
 WHERE Documento = @Docu
+go
 
 --ELIMINAR
 CREATE PROC SP_ELIMINARCLIENT
@@ -233,16 +238,19 @@ CREATE PROC SP_ELIMINARCLIENT
 AS
 DELETE Cliente
 WHERE Documento = @Docu
+go
 
 --Buscar
 create proc SP_BUSCARCLIENTE
 as 
 select * from Cliente
+go
 
 create proc BuscarUnCliente
 @Docu INT
 as
 select * from Cliente where Documento=@Docu
+go
 
 
 --Tabla Factura y Factura detalle
@@ -253,6 +261,7 @@ select * from Cliente where Documento=@Docu
 	@CodVende INT
 	AS
 	INSERT INTO Factura VALUES(@Fech,@DoClient,@CodVendE)
+	go
 
 	CREATE PROC SP_AGGFACTDETA
 	@IDFac INT,
@@ -261,10 +270,12 @@ select * from Cliente where Documento=@Docu
 	@ValUnidad INT
 	AS
 	INSERT INTO Factura_Detalle VALUES(@IDFac,@CodProd,@Cant,@ValUnidad)
+	go
 
 	create proc BuscarFactura
 	as
-	select top 1  IdFactu from factura order by IdFactu desc  
+	select top 1  IdFactu from factura order by IdFactu desc
+	go
 
 --Descontar cantidades
 
@@ -274,6 +285,7 @@ select * from Cliente where Documento=@Docu
 	AS
 	UPDATE Productos SET Cantidad = Cantidad - @Cantidad
 	WHERE Codigo = @Codprod
+	go
 
 
 
@@ -314,12 +326,14 @@ create proc EditarVendedores
 as
 UPDATE Vendedores SET Codigo = @Codigo, Usuario = @Usuario, Contraseña = @Contraseña, Nombre = @Nombre
 WHERE Codigo = @Codigo
+go
 
 CREATE PROC EliminarVendedor
 @Codigo INT
 AS
 DELETE Vendedores
 WHERE Codigo = @Codigo
+go
 
 
 
@@ -334,13 +348,14 @@ AS
 SELECT P.Descripción,P.Cantidad,SUM(F.Cantidad) AS 'Vendido' FROM Factura_Detalle AS F
 JOIN Productos AS P on F.Codigo_Productos = P.Codigo
 where P.Codigo = @Prod GROUP BY P.Descripción,P.Cantidad
+go
 
 CREATE PROC SP_BUSCARINVENTARIOS
 AS
 SELECT P.Descripción,P.Cantidad,SUM(F.Cantidad) AS 'Vendido' FROM Factura_Detalle AS F
 JOIN Productos AS P on F.Codigo_Productos = P.Codigo
 GROUP BY P.Descripción,P.Cantidad
-
+go
 
 
 

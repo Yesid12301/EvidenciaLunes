@@ -15,7 +15,7 @@ namespace Tienda_Naturista
     public partial class Gestion_Clientes : Form
     {
         public Gestion_Clientes()
-        {
+        {           
             InitializeComponent();
         }
         CN_Clientes oCN_Clientes = new CN_Clientes();
@@ -124,6 +124,7 @@ namespace Tienda_Naturista
             (TxtDirecEditarCli.Text) = String.Empty;
             (TxtTelEditarCli.Text) = String.Empty;
             (TxtCorreoEditarCli.Text) = String.Empty;
+            (TxtCorreoEditarCli.Text) = "asda";
         }
 
         

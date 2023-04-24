@@ -42,3 +42,14 @@ F:\Programacion\C#\PROYECTOS_MIOS\GRAFICA\Tienda\CapaNegocios\obj\Debug\CapaNego
 F:\Programacion\C#\PROYECTOS_MIOS\GRAFICA\Tienda\CapaNegocios\obj\Debug\CapaNegocios.csproj.CopyComplete
 F:\Programacion\C#\PROYECTOS_MIOS\GRAFICA\Tienda\CapaNegocios\obj\Debug\CapaNegocios.dll
 F:\Programacion\C#\PROYECTOS_MIOS\GRAFICA\Tienda\CapaNegocios\obj\Debug\CapaNegocios.pdb
+F:\Programacion\C#\PROYECTOS_MIOS\GRAFICA\Tienda\EvidenciaLunes\CapaNegocios\bin\Debug\CapaNegocios.dll
+F:\Programacion\C#\PROYECTOS_MIOS\GRAFICA\Tienda\EvidenciaLunes\CapaNegocios\bin\Debug\CapaNegocios.pdb
+F:\Programacion\C#\PROYECTOS_MIOS\GRAFICA\Tienda\EvidenciaLunes\CapaNegocios\bin\Debug\CapaDatos.dll
+F:\Programacion\C#\PROYECTOS_MIOS\GRAFICA\Tienda\EvidenciaLunes\CapaNegocios\bin\Debug\CapaEntidades.dll
+F:\Programacion\C#\PROYECTOS_MIOS\GRAFICA\Tienda\EvidenciaLunes\CapaNegocios\bin\Debug\CapaDatos.pdb
+F:\Programacion\C#\PROYECTOS_MIOS\GRAFICA\Tienda\EvidenciaLunes\CapaNegocios\bin\Debug\CapaEntidades.pdb
+F:\Programacion\C#\PROYECTOS_MIOS\GRAFICA\Tienda\EvidenciaLunes\CapaNegocios\obj\Debug\CapaNegocios.csproj.AssemblyReference.cache
+F:\Programacion\C#\PROYECTOS_MIOS\GRAFICA\Tienda\EvidenciaLunes\CapaNegocios\obj\Debug\CapaNegocios.csproj.CoreCompileInputs.cache
+F:\Programacion\C#\PROYECTOS_MIOS\GRAFICA\Tienda\EvidenciaLunes\CapaNegocios\obj\Debug\CapaNegocios.csproj.CopyComplete
+F:\Programacion\C#\PROYECTOS_MIOS\GRAFICA\Tienda\EvidenciaLunes\CapaNegocios\obj\Debug\CapaNegocios.dll
+F:\Programacion\C#\PROYECTOS_MIOS\GRAFICA\Tienda\EvidenciaLunes\CapaNegocios\obj\Debug\CapaNegocios.pdb

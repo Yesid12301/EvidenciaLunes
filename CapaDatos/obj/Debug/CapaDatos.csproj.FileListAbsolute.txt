@@ -34,3 +34,12 @@ F:\Programacion\C#\PROYECTOS_MIOS\GRAFICA\Tienda\CapaDatos\obj\Debug\CapaDatos.c
 F:\Programacion\C#\PROYECTOS_MIOS\GRAFICA\Tienda\CapaDatos\obj\Debug\CapaDatos.csproj.CopyComplete
 F:\Programacion\C#\PROYECTOS_MIOS\GRAFICA\Tienda\CapaDatos\obj\Debug\CapaDatos.dll
 F:\Programacion\C#\PROYECTOS_MIOS\GRAFICA\Tienda\CapaDatos\obj\Debug\CapaDatos.pdb
+F:\Programacion\C#\PROYECTOS_MIOS\GRAFICA\Tienda\EvidenciaLunes\CapaDatos\bin\Debug\CapaDatos.dll
+F:\Programacion\C#\PROYECTOS_MIOS\GRAFICA\Tienda\EvidenciaLunes\CapaDatos\bin\Debug\CapaDatos.pdb
+F:\Programacion\C#\PROYECTOS_MIOS\GRAFICA\Tienda\EvidenciaLunes\CapaDatos\bin\Debug\CapaEntidades.dll
+F:\Programacion\C#\PROYECTOS_MIOS\GRAFICA\Tienda\EvidenciaLunes\CapaDatos\bin\Debug\CapaEntidades.pdb
+F:\Programacion\C#\PROYECTOS_MIOS\GRAFICA\Tienda\EvidenciaLunes\CapaDatos\obj\Debug\CapaDatos.csproj.AssemblyReference.cache
+F:\Programacion\C#\PROYECTOS_MIOS\GRAFICA\Tienda\EvidenciaLunes\CapaDatos\obj\Debug\CapaDatos.csproj.CoreCompileInputs.cache
+F:\Programacion\C#\PROYECTOS_MIOS\GRAFICA\Tienda\EvidenciaLunes\CapaDatos\obj\Debug\CapaDatos.csproj.CopyComplete
+F:\Programacion\C#\PROYECTOS_MIOS\GRAFICA\Tienda\EvidenciaLunes\CapaDatos\obj\Debug\CapaDatos.dll
+F:\Programacion\C#\PROYECTOS_MIOS\GRAFICA\Tienda\EvidenciaLunes\CapaDatos\obj\Debug\CapaDatos.pdb
