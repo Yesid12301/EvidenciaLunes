@@ -28,6 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.DgvConsultarCliente = new System.Windows.Forms.DataGridView();
             this.BtnMostrarTodoConsultar = new System.Windows.Forms.Button();
@@ -67,12 +73,14 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.tabPage4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DgvConsultarCliente)).BeginInit();
             this.tabPage3.SuspendLayout();
             this.tabPage2.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
             // tabPage4
@@ -92,9 +100,59 @@
             // 
             // DgvConsultarCliente
             // 
-            this.DgvConsultarCliente.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DgvConsultarCliente.AllowUserToAddRows = false;
+            this.DgvConsultarCliente.AllowUserToDeleteRows = false;
+            this.DgvConsultarCliente.AllowUserToResizeColumns = false;
+            this.DgvConsultarCliente.AllowUserToResizeRows = false;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(241)))), ((int)(((byte)(214)))));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(241)))), ((int)(((byte)(214)))));
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.Black;
+            this.DgvConsultarCliente.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.DgvConsultarCliente.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.DgvConsultarCliente.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(241)))), ((int)(((byte)(214)))));
+            this.DgvConsultarCliente.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.DgvConsultarCliente.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(241)))), ((int)(((byte)(214)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(241)))), ((int)(((byte)(214)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.Desktop;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DgvConsultarCliente.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.DgvConsultarCliente.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(241)))), ((int)(((byte)(214)))));
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(241)))), ((int)(((byte)(214)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.Desktop;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.DgvConsultarCliente.DefaultCellStyle = dataGridViewCellStyle3;
+            this.DgvConsultarCliente.EnableHeadersVisualStyles = false;
+            this.DgvConsultarCliente.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(241)))), ((int)(((byte)(214)))));
+            this.DgvConsultarCliente.ImeMode = System.Windows.Forms.ImeMode.Off;
             this.DgvConsultarCliente.Location = new System.Drawing.Point(28, 138);
             this.DgvConsultarCliente.Name = "DgvConsultarCliente";
+            this.DgvConsultarCliente.ReadOnly = true;
+            this.DgvConsultarCliente.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Sunken;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(241)))), ((int)(((byte)(214)))));
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(241)))), ((int)(((byte)(214)))));
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.Desktop;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DgvConsultarCliente.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            this.DgvConsultarCliente.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(241)))), ((int)(((byte)(214)))));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(241)))), ((int)(((byte)(214)))));
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.Black;
+            this.DgvConsultarCliente.RowsDefaultCellStyle = dataGridViewCellStyle5;
+            this.DgvConsultarCliente.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.CellSelect;
+            this.DgvConsultarCliente.ShowRowErrors = false;
             this.DgvConsultarCliente.Size = new System.Drawing.Size(712, 208);
             this.DgvConsultarCliente.TabIndex = 4;
             // 
@@ -259,6 +317,7 @@
             this.TxtCorreoEditarCli.Name = "TxtCorreoEditarCli";
             this.TxtCorreoEditarCli.Size = new System.Drawing.Size(201, 20);
             this.TxtCorreoEditarCli.TabIndex = 21;
+            this.TxtCorreoEditarCli.TextChanged += new System.EventHandler(this.TxtCorreoEditarCli_TextChanged);
             // 
             // TxtTelEditarCli
             // 
@@ -267,6 +326,7 @@
             this.TxtTelEditarCli.Name = "TxtTelEditarCli";
             this.TxtTelEditarCli.Size = new System.Drawing.Size(201, 20);
             this.TxtTelEditarCli.TabIndex = 20;
+            this.TxtTelEditarCli.TextChanged += new System.EventHandler(this.TxtTelEditarCli_TextChanged);
             // 
             // TxtDirecEditarCli
             // 
@@ -275,6 +335,7 @@
             this.TxtDirecEditarCli.Name = "TxtDirecEditarCli";
             this.TxtDirecEditarCli.Size = new System.Drawing.Size(201, 20);
             this.TxtDirecEditarCli.TabIndex = 19;
+            this.TxtDirecEditarCli.TextChanged += new System.EventHandler(this.TxtDirecEditarCli_TextChanged);
             // 
             // TxtNomEditarCli
             // 
@@ -283,12 +344,14 @@
             this.TxtNomEditarCli.Name = "TxtNomEditarCli";
             this.TxtNomEditarCli.Size = new System.Drawing.Size(201, 20);
             this.TxtNomEditarCli.TabIndex = 18;
+            this.TxtNomEditarCli.TextChanged += new System.EventHandler(this.TxtNomEditarCli_TextChanged);
             // 
             // TxtDocEditatrCli
             // 
             this.TxtDocEditatrCli.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(81)))), ((int)(((byte)(59)))));
             this.TxtDocEditatrCli.Location = new System.Drawing.Point(481, 41);
             this.TxtDocEditatrCli.Name = "TxtDocEditatrCli";
+            this.TxtDocEditatrCli.ReadOnly = true;
             this.TxtDocEditatrCli.Size = new System.Drawing.Size(201, 20);
             this.TxtDocEditatrCli.TabIndex = 17;
             // 
@@ -409,6 +472,7 @@
             this.TxtCorreoIngresarCli.Name = "TxtCorreoIngresarCli";
             this.TxtCorreoIngresarCli.Size = new System.Drawing.Size(201, 20);
             this.TxtCorreoIngresarCli.TabIndex = 9;
+            this.TxtCorreoIngresarCli.TextChanged += new System.EventHandler(this.TxtCorreoIngresarCli_TextChanged);
             // 
             // TxtTelefonoIngresarCli
             // 
@@ -417,6 +481,7 @@
             this.TxtTelefonoIngresarCli.Name = "TxtTelefonoIngresarCli";
             this.TxtTelefonoIngresarCli.Size = new System.Drawing.Size(201, 20);
             this.TxtTelefonoIngresarCli.TabIndex = 8;
+            this.TxtTelefonoIngresarCli.TextChanged += new System.EventHandler(this.TxtTelefonoIngresarCli_TextChanged);
             // 
             // TxtDireccionIngresarCli
             // 
@@ -425,6 +490,7 @@
             this.TxtDireccionIngresarCli.Name = "TxtDireccionIngresarCli";
             this.TxtDireccionIngresarCli.Size = new System.Drawing.Size(201, 20);
             this.TxtDireccionIngresarCli.TabIndex = 7;
+            this.TxtDireccionIngresarCli.TextChanged += new System.EventHandler(this.TxtDireccionIngresarCli_TextChanged);
             // 
             // TxtNombreIngresarCli
             // 
@@ -433,6 +499,7 @@
             this.TxtNombreIngresarCli.Name = "TxtNombreIngresarCli";
             this.TxtNombreIngresarCli.Size = new System.Drawing.Size(201, 20);
             this.TxtNombreIngresarCli.TabIndex = 6;
+            this.TxtNombreIngresarCli.TextChanged += new System.EventHandler(this.TxtNombreIngresarCli_TextChanged);
             // 
             // TxtDocumentoIngresarCli
             // 
@@ -441,6 +508,7 @@
             this.TxtDocumentoIngresarCli.Name = "TxtDocumentoIngresarCli";
             this.TxtDocumentoIngresarCli.Size = new System.Drawing.Size(201, 20);
             this.TxtDocumentoIngresarCli.TabIndex = 5;
+            this.TxtDocumentoIngresarCli.TextChanged += new System.EventHandler(this.TxtDocumentoIngresarCli_TextChanged);
             // 
             // label5
             // 
@@ -497,6 +565,10 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Documento:";
             // 
+            // errorProvider1
+            // 
+            this.errorProvider1.ContainerControl = this;
+            // 
             // Gestion_Clientes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -519,6 +591,7 @@
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -564,5 +637,6 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Button BtnConsultarEditarCli;
+        private System.Windows.Forms.ErrorProvider errorProvider1;
     }
 }

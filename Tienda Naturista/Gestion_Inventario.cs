@@ -21,6 +21,7 @@ namespace Tienda_Naturista
         private void Gestion_Inventario_Load(object sender, EventArgs e)
         {
             dtgInventario.DataSource= oCN_inventario.BuscarInventario();
+            dtgInventario.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
             buscarInventario();
         }
         private void buscarInventario()

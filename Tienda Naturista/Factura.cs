@@ -45,6 +45,7 @@ namespace Tienda_Naturista
             BuscarCliente();
             BuscarProductos();
             TxtFactura.Text=(oCN_Factura.BuscarFactura()+1).ToString();
+            //DgvFacturaproductos.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
             DtpFactura.Enabled=false;
             BtnAgregarProducto.Enabled=false;
             BtnTerminarFact.Enabled = false;
@@ -64,6 +65,7 @@ namespace Tienda_Naturista
                     Convert.ToInt32(TxtCantidad.Text),
                     oCE_Productos.ValUnd * Convert.ToInt32(TxtCantidad.Text));
 
+
                 total += Convert.ToInt32(TxtCantidad.Text) * oCE_Productos.ValUnd;
                 TxtTotalFact.Text = total.ToString();
                 CbxCliente.Enabled = false;
@@ -71,7 +73,7 @@ namespace Tienda_Naturista
                 BtnTerminarFact.Enabled = true;
             }
             else
-                MessageBox.Show("La vcantidad debe ser mayor a 0");
+                MessageBox.Show("La vcantidad debe ser mayor a 0");;
         }
         private void BtnTerminarFact_Click(object sender, EventArgs e)
         {

@@ -7,6 +7,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -25,14 +26,15 @@ namespace Tienda_Naturista
         private void BtnGuardarVen_Click_1(object sender, EventArgs e)
         {
             vendedores.Codigo = Convert.ToInt32(TxtInsertarVen.Text);
-            vendedores.Usuario = (TxtUsuarioVen.Text);
-            vendedores.Contraseña = Encriptacion.GetSHA256(TxtContraseñaven.Text);
-            vendedores.Nombre = (TxtNombreVen.Text);
+            vendedores.Usuario = (TxtUsuarioVen.Text.Trim());
+            vendedores.Contraseña = Encriptacion.GetSHA256(TxtContraseñaven.Text.Trim());
+            vendedores.Nombre = (TxtNombreVen.Text.Trim());
             try
             {
                 oCN_Vendedores.InsertarVendedores(vendedores);
                 MessageBox.Show("Vendedor Ingresado Corrrectamente");
                 DgvConsultarVen.DataSource = oCN_Vendedores.Buscar_vendedores();
+                Buscarvendedores();
             }
             catch (Exception)
             {
@@ -54,8 +56,11 @@ namespace Tienda_Naturista
         private void Gestion_Vendedores_Load_1(object sender, EventArgs e)
         {
             DgvConsultarVen.DataSource = oCN_Vendedores.Buscar_vendedores();
+            DgvConsultarVen.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
             DgvConsultarVen.Columns[2].Visible = false;
             Buscarvendedores();
+            BtnGuardarVen.Enabled= false;
+            BtnGuardarCambModifVen.Enabled = false;
         }
         private void Buscarvendedores()
         {
@@ -96,9 +101,9 @@ namespace Tienda_Naturista
         private void BtnGuardarCambModifVen_Click_1(object sender, EventArgs e)
         {
             vendedores.Codigo = Convert.ToInt32(TxtCodigoModifVen.Text);
-            vendedores.Usuario = (TxtUsuarioModifVen.Text);
-            vendedores.Contraseña = Encriptacion.GetSHA256(TxtContraModifVen.Text);
-            vendedores.Nombre = (TxtNombreModifVen.Text);
+            vendedores.Usuario = (TxtUsuarioModifVen.Text.Trim());
+            vendedores.Contraseña = Encriptacion.GetSHA256(TxtContraModifVen.Text.Trim());
+            vendedores.Nombre = (TxtNombreModifVen.Text.Trim());
             try
             {
                 oCN_Vendedores.EditarVendedores(vendedores);
@@ -122,5 +127,140 @@ namespace Tienda_Naturista
             Buscarvendedores();
             DgvConsultarVen.DataSource = oCN_Vendedores.Buscar_vendedores();
         }
+
+        private void TxtInsertarVen_TextChanged(object sender, EventArgs e)
+        {
+            validacionUsuario(TxtInsertarVen, TxtUsuarioVen, TxtContraseñaven, TxtNombreVen);
+        }
+
+        private void TxtUsuarioVen_TextChanged(object sender, EventArgs e)
+        {
+            validacionUsuario(TxtInsertarVen, TxtUsuarioVen, TxtContraseñaven, TxtNombreVen);
+        }
+
+        private void TxtContraseñaven_TextChanged(object sender, EventArgs e)
+        {
+            validacionUsuario(TxtInsertarVen, TxtUsuarioVen, TxtContraseñaven, TxtNombreVen);
+        }
+
+        private void TxtNombreVen_TextChanged(object sender, EventArgs e)
+        {
+            validacionUsuario(TxtInsertarVen, TxtUsuarioVen, TxtContraseñaven, TxtNombreVen);
+        }
+
+
+        private void validacionUsuario(TextBox TxtInsertarVen, TextBox TxtUsuarioVen, TextBox TxtContraseñaven, TextBox TxtNombreVen)
+        {
+            if (validacionNumero(TxtInsertarVen) == false)
+            {
+                if (validacionVacio(TxtUsuarioVen) == false)
+                {
+                    if (validacionVacio(TxtContraseñaven) == false)
+                    {
+                        if (validacionletra(TxtNombreVen) == false)
+                        {                           
+                            BtnGuardarVen.Enabled = true;                            
+                        }
+                        else { BtnGuardarVen.Enabled = false; }
+                    }
+                    else { BtnGuardarVen.Enabled = false; }
+                }
+                else { BtnGuardarVen.Enabled = false; }
+            }
+            else { BtnGuardarVen.Enabled = false; }
+        }
+
+        //metodos para validacion
+        private bool validacionNumero(object cajastxt)
+        {
+            TextBox cajita = cajastxt as TextBox;
+            bool error = false;
+            foreach (char c in cajita.Text)
+            {
+                if (!char.IsDigit(c))
+                {
+                    error = true;
+                    break;
+                }
+            }
+            if (error == true)
+            {
+                errorProvider1.SetError(cajita, " solo numeros");
+            }
+            else
+            {
+                errorProvider1.SetError(cajita, "");
+            }
+            return error;
+        }
+        private bool validacionletra(object cajastxt)
+        {
+            TextBox cajita = cajastxt as TextBox;
+            bool error = false;
+            foreach (char c in cajita.Text)
+            {
+                if (!Char.IsLetter(c) && !Char.IsWhiteSpace(c))
+                {
+                    error = true;
+                    break;
+                }
+            }
+            if (error == true)
+            {
+                errorProvider1.SetError(cajita, " solo digite letra ");
+            }
+            else
+            {
+                errorProvider1.SetError(cajita, "");
+            }
+            return error;
+        }
+        private bool validacionVacio(object cajastxt)
+        {
+            TextBox cajita = cajastxt as TextBox;
+            bool error = false;
+            if (string.IsNullOrEmpty(cajita.Text)) { error = true; }
+
+            if (error == true)
+            {
+                errorProvider1.SetError(cajita, " No dejar vacio ");
+            }
+            else
+            {
+                errorProvider1.SetError(cajita, "");
+            }
+            return error;
+        }
+
+        private void TxtUsuarioModifVen_TextChanged(object sender, EventArgs e)
+        {
+            validacionModificaion(TxtUsuarioModifVen, TxtContraModifVen, TxtNombreModifVen);
+        }
+
+        private void TxtContraModifVen_TextChanged(object sender, EventArgs e)
+        {
+            validacionModificaion(TxtUsuarioModifVen, TxtContraModifVen, TxtNombreModifVen);
+        }
+
+        private void TxtNombreModifVen_TextChanged(object sender, EventArgs e)
+        {
+            validacionModificaion(TxtUsuarioModifVen, TxtContraModifVen, TxtNombreModifVen);
+        }
+        private void validacionModificaion(TextBox TxtUsuarioModifVen, TextBox TxtContraModifVen, TextBox TxtNombreModifVen)
+        {
+            if (validacionVacio(TxtUsuarioModifVen) == false)
+            {
+                if (validacionVacio(TxtContraModifVen) == false)
+                {
+                    if (validacionletra(TxtNombreModifVen) == false)
+                    {
+                        BtnGuardarCambModifVen.Enabled = true;
+                    }
+                    else { BtnGuardarCambModifVen.Enabled = false; }
+                }
+                else { BtnGuardarCambModifVen.Enabled = false; }
+            }
+            else { BtnGuardarCambModifVen.Enabled = false; }
+        }           
     }
 }

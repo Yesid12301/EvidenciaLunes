@@ -66,6 +66,7 @@
             // 
             // CbxProductoInventario
             // 
+            this.CbxProductoInventario.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.CbxProductoInventario.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CbxProductoInventario.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(81)))), ((int)(((byte)(59)))));
             this.CbxProductoInventario.FormattingEnabled = true;

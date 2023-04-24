@@ -78,14 +78,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Tienda Naturista.exe" size="173480">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Tienda Naturista.exe" size="180136">
       <assemblyIdentity name="Tienda Naturista" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>YeRZkFdTivcr/g67bOpqBFPyswYNJLJg5+/dXBb5Tpo=</dsig:DigestValue>
+        <dsig:DigestValue>Q79iy6O8ykv1sz0jooGkxiLSQ7w4Bdy7AC0O+0x8jBQ=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

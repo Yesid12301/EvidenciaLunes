@@ -46,6 +46,7 @@ namespace Tienda_Naturista
         private void Gestion_Productos_Load(object sender, EventArgs e)
         {
             DgvProductos.DataSource = oCN_Productos.MostrarProductos();
+            DgvProductos.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
             BuscarProductos();
             BtnGuardar.Enabled = false;
             BtnGuardarCambios.Enabled = false;
@@ -254,17 +255,10 @@ namespace Tienda_Naturista
         {
             TextBox cajita = cajastxt as TextBox;
             bool error = false;
-            foreach (char c in cajita.Text)
-            {
-                if (!char.IsLetter(c))
-                {
-                    error = true;
-                    break;
-                }
-            }
+            if (cajita.Text == string.Empty) { error = true; }
             if (error == true)
             {
-                errorProvider1.SetError(cajita, " solo digite letra ");
+                errorProvider1.SetError(cajita, "No dejar vacio");
             }
             else
             {

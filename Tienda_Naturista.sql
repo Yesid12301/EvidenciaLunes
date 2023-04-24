@@ -164,26 +164,26 @@ INSERT INTO Productos VALUES
 
 --Tabla producto Procedimientos Almacenados
 
---INSERTAR
-CREATE PROC SP_INSERTARPRODUCT
+
+CREATE PROCedure SP_INSERTARPRODUCT
 @Codigo INT,
 @Descri VARCHAR(30),
 @ValUnd INT,
 @Cantida INT
 AS
 INSERT INTO Productos VALUES(@Codigo,@Descri,@ValUnd,@Cantida)
-go
---Consultar 
-create proc BuscarTodosproductos
+
+
+create procedure BuscarTodosproductos
 as 
 select * from Productos
-go
+
 
 create proc BuscarUnproducto
 @Codigo int
 as 
 select * from Productos where Codigo=@Codigo
-go
+
 
 
 --ACTUALIZAR
@@ -196,7 +196,7 @@ CREATE PROC SP_ACTUALIZARPROD
 AS
 UPDATE Productos SET Codigo =@CodNew, Descripción = @Descri, Valor_Unidad = @ValUnd,Cantidad = @Cant
 WHERE Codigo = @Cod
-go
+
 
 --ELIMINAR
 CREATE PROC SP_ELIMINARPROD

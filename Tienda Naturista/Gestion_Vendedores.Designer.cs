@@ -28,6 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle51 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle52 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle53 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle54 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle55 = new System.Windows.Forms.DataGridViewCellStyle();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.Insertar_Vendedores = new System.Windows.Forms.TabPage();
             this.BtnLimpiarVen = new System.Windows.Forms.Button();
@@ -63,12 +69,14 @@
             this.BtnEliminarUsuario = new System.Windows.Forms.Button();
             this.CbxUsuarioElimiVen = new System.Windows.Forms.ComboBox();
             this.label11 = new System.Windows.Forms.Label();
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.tabControl1.SuspendLayout();
             this.Insertar_Vendedores.SuspendLayout();
             this.Modificar_Vendedores.SuspendLayout();
             this.tabPage3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DgvConsultarVen)).BeginInit();
             this.tabPage4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -134,14 +142,17 @@
             this.TxtNombreVen.Name = "TxtNombreVen";
             this.TxtNombreVen.Size = new System.Drawing.Size(152, 20);
             this.TxtNombreVen.TabIndex = 7;
+            this.TxtNombreVen.TextChanged += new System.EventHandler(this.TxtNombreVen_TextChanged);
             // 
             // TxtContraseñaven
             // 
             this.TxtContraseñaven.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(81)))), ((int)(((byte)(59)))));
             this.TxtContraseñaven.Location = new System.Drawing.Point(311, 133);
             this.TxtContraseñaven.Name = "TxtContraseñaven";
+            this.TxtContraseñaven.PasswordChar = '*';
             this.TxtContraseñaven.Size = new System.Drawing.Size(152, 20);
             this.TxtContraseñaven.TabIndex = 6;
+            this.TxtContraseñaven.TextChanged += new System.EventHandler(this.TxtContraseñaven_TextChanged);
             // 
             // TxtUsuarioVen
             // 
@@ -150,6 +161,7 @@
             this.TxtUsuarioVen.Name = "TxtUsuarioVen";
             this.TxtUsuarioVen.Size = new System.Drawing.Size(152, 20);
             this.TxtUsuarioVen.TabIndex = 5;
+            this.TxtUsuarioVen.TextChanged += new System.EventHandler(this.TxtUsuarioVen_TextChanged);
             // 
             // TxtInsertarVen
             // 
@@ -158,6 +170,7 @@
             this.TxtInsertarVen.Name = "TxtInsertarVen";
             this.TxtInsertarVen.Size = new System.Drawing.Size(152, 20);
             this.TxtInsertarVen.TabIndex = 4;
+            this.TxtInsertarVen.TextChanged += new System.EventHandler(this.TxtInsertarVen_TextChanged);
             // 
             // label4
             // 
@@ -240,14 +253,17 @@
             this.TxtNombreModifVen.Name = "TxtNombreModifVen";
             this.TxtNombreModifVen.Size = new System.Drawing.Size(192, 20);
             this.TxtNombreModifVen.TabIndex = 10;
+            this.TxtNombreModifVen.TextChanged += new System.EventHandler(this.TxtNombreModifVen_TextChanged);
             // 
             // TxtContraModifVen
             // 
             this.TxtContraModifVen.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(81)))), ((int)(((byte)(59)))));
             this.TxtContraModifVen.Location = new System.Drawing.Point(466, 148);
             this.TxtContraModifVen.Name = "TxtContraModifVen";
+            this.TxtContraModifVen.PasswordChar = '*';
             this.TxtContraModifVen.Size = new System.Drawing.Size(192, 20);
             this.TxtContraModifVen.TabIndex = 9;
+            this.TxtContraModifVen.TextChanged += new System.EventHandler(this.TxtContraModifVen_TextChanged);
             // 
             // TxtUsuarioModifVen
             // 
@@ -256,12 +272,14 @@
             this.TxtUsuarioModifVen.Name = "TxtUsuarioModifVen";
             this.TxtUsuarioModifVen.Size = new System.Drawing.Size(192, 20);
             this.TxtUsuarioModifVen.TabIndex = 8;
+            this.TxtUsuarioModifVen.TextChanged += new System.EventHandler(this.TxtUsuarioModifVen_TextChanged);
             // 
             // TxtCodigoModifVen
             // 
             this.TxtCodigoModifVen.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(81)))), ((int)(((byte)(59)))));
             this.TxtCodigoModifVen.Location = new System.Drawing.Point(466, 60);
             this.TxtCodigoModifVen.Name = "TxtCodigoModifVen";
+            this.TxtCodigoModifVen.ReadOnly = true;
             this.TxtCodigoModifVen.Size = new System.Drawing.Size(192, 20);
             this.TxtCodigoModifVen.TabIndex = 7;
             // 
@@ -353,9 +371,59 @@
             // 
             // DgvConsultarVen
             // 
-            this.DgvConsultarVen.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DgvConsultarVen.AllowUserToAddRows = false;
+            this.DgvConsultarVen.AllowUserToDeleteRows = false;
+            this.DgvConsultarVen.AllowUserToResizeColumns = false;
+            this.DgvConsultarVen.AllowUserToResizeRows = false;
+            dataGridViewCellStyle51.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(241)))), ((int)(((byte)(214)))));
+            dataGridViewCellStyle51.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle51.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(241)))), ((int)(((byte)(214)))));
+            dataGridViewCellStyle51.SelectionForeColor = System.Drawing.Color.Black;
+            this.DgvConsultarVen.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle51;
+            this.DgvConsultarVen.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.DgvConsultarVen.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(241)))), ((int)(((byte)(214)))));
+            this.DgvConsultarVen.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.DgvConsultarVen.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle52.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle52.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(241)))), ((int)(((byte)(214)))));
+            dataGridViewCellStyle52.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle52.ForeColor = System.Drawing.SystemColors.InfoText;
+            dataGridViewCellStyle52.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(241)))), ((int)(((byte)(214)))));
+            dataGridViewCellStyle52.SelectionForeColor = System.Drawing.SystemColors.Desktop;
+            dataGridViewCellStyle52.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DgvConsultarVen.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle52;
+            this.DgvConsultarVen.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            dataGridViewCellStyle53.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle53.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(241)))), ((int)(((byte)(214)))));
+            dataGridViewCellStyle53.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle53.ForeColor = System.Drawing.SystemColors.Desktop;
+            dataGridViewCellStyle53.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(241)))), ((int)(((byte)(214)))));
+            dataGridViewCellStyle53.SelectionForeColor = System.Drawing.SystemColors.Desktop;
+            dataGridViewCellStyle53.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.DgvConsultarVen.DefaultCellStyle = dataGridViewCellStyle53;
+            this.DgvConsultarVen.EnableHeadersVisualStyles = false;
+            this.DgvConsultarVen.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(241)))), ((int)(((byte)(214)))));
+            this.DgvConsultarVen.ImeMode = System.Windows.Forms.ImeMode.Off;
             this.DgvConsultarVen.Location = new System.Drawing.Point(29, 149);
             this.DgvConsultarVen.Name = "DgvConsultarVen";
+            this.DgvConsultarVen.ReadOnly = true;
+            this.DgvConsultarVen.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Sunken;
+            dataGridViewCellStyle54.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle54.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(241)))), ((int)(((byte)(214)))));
+            dataGridViewCellStyle54.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle54.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle54.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(241)))), ((int)(((byte)(214)))));
+            dataGridViewCellStyle54.SelectionForeColor = System.Drawing.SystemColors.Desktop;
+            dataGridViewCellStyle54.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DgvConsultarVen.RowHeadersDefaultCellStyle = dataGridViewCellStyle54;
+            this.DgvConsultarVen.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
+            dataGridViewCellStyle55.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(241)))), ((int)(((byte)(214)))));
+            dataGridViewCellStyle55.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle55.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(241)))), ((int)(((byte)(214)))));
+            dataGridViewCellStyle55.SelectionForeColor = System.Drawing.Color.Black;
+            this.DgvConsultarVen.RowsDefaultCellStyle = dataGridViewCellStyle55;
+            this.DgvConsultarVen.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.CellSelect;
+            this.DgvConsultarVen.ShowRowErrors = false;
             this.DgvConsultarVen.Size = new System.Drawing.Size(658, 163);
             this.DgvConsultarVen.TabIndex = 4;
             // 
@@ -446,6 +514,10 @@
             this.label11.TabIndex = 0;
             this.label11.Text = "Usuario:";
             // 
+            // errorProvider1
+            // 
+            this.errorProvider1.ContainerControl = this;
+            // 
             // Gestion_Vendedores
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -467,6 +539,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.DgvConsultarVen)).EndInit();
             this.tabPage4.ResumeLayout(false);
             this.tabPage4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -508,5 +581,6 @@
         private System.Windows.Forms.Button BtnEliminarUsuario;
         private System.Windows.Forms.ComboBox CbxUsuarioElimiVen;
         private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.ErrorProvider errorProvider1;
     }
 }
