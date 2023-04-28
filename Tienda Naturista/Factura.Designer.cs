@@ -51,14 +51,14 @@
             this.BtnAgregarProducto = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
             this.DgvFacturaproductos = new System.Windows.Forms.DataGridView();
-            this.BtnTerminarFact = new System.Windows.Forms.Button();
-            this.label7 = new System.Windows.Forms.Label();
-            this.TxtTotalFact = new System.Windows.Forms.TextBox();
             this.Codigo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Descripcion = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ValorUnitario = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Cantidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Subtotal = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.BtnTerminarFact = new System.Windows.Forms.Button();
+            this.label7 = new System.Windows.Forms.Label();
+            this.TxtTotalFact = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.DgvFacturaproductos)).BeginInit();
             this.SuspendLayout();
             // 
@@ -261,42 +261,6 @@
             this.DgvFacturaproductos.Size = new System.Drawing.Size(560, 210);
             this.DgvFacturaproductos.TabIndex = 12;
             // 
-            // BtnTerminarFact
-            // 
-            this.BtnTerminarFact.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(81)))), ((int)(((byte)(59)))));
-            this.BtnTerminarFact.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.BtnTerminarFact.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnTerminarFact.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnTerminarFact.ForeColor = System.Drawing.SystemColors.Control;
-            this.BtnTerminarFact.Location = new System.Drawing.Point(749, 335);
-            this.BtnTerminarFact.Name = "BtnTerminarFact";
-            this.BtnTerminarFact.Size = new System.Drawing.Size(89, 32);
-            this.BtnTerminarFact.TabIndex = 13;
-            this.BtnTerminarFact.Text = "Guardar";
-            this.BtnTerminarFact.UseVisualStyleBackColor = false;
-            this.BtnTerminarFact.Click += new System.EventHandler(this.BtnTerminarFact_Click);
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.BackColor = System.Drawing.Color.Transparent;
-            this.label7.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(90)))), ((int)(((byte)(90)))));
-            this.label7.Location = new System.Drawing.Point(422, 343);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(92, 16);
-            this.label7.TabIndex = 14;
-            this.label7.Text = "Total Factura";
-            // 
-            // TxtTotalFact
-            // 
-            this.TxtTotalFact.BackColor = System.Drawing.SystemColors.HighlightText;
-            this.TxtTotalFact.Location = new System.Drawing.Point(534, 339);
-            this.TxtTotalFact.Name = "TxtTotalFact";
-            this.TxtTotalFact.ReadOnly = true;
-            this.TxtTotalFact.Size = new System.Drawing.Size(124, 20);
-            this.TxtTotalFact.TabIndex = 15;
-            // 
             // Codigo
             // 
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(153)))), ((int)(((byte)(102)))));
@@ -356,6 +320,42 @@
             this.Subtotal.HeaderText = "Subtotal";
             this.Subtotal.Name = "Subtotal";
             this.Subtotal.ReadOnly = true;
+            // 
+            // BtnTerminarFact
+            // 
+            this.BtnTerminarFact.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(81)))), ((int)(((byte)(59)))));
+            this.BtnTerminarFact.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.BtnTerminarFact.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnTerminarFact.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnTerminarFact.ForeColor = System.Drawing.SystemColors.Control;
+            this.BtnTerminarFact.Location = new System.Drawing.Point(749, 335);
+            this.BtnTerminarFact.Name = "BtnTerminarFact";
+            this.BtnTerminarFact.Size = new System.Drawing.Size(89, 32);
+            this.BtnTerminarFact.TabIndex = 13;
+            this.BtnTerminarFact.Text = "Guardar";
+            this.BtnTerminarFact.UseVisualStyleBackColor = false;
+            this.BtnTerminarFact.Click += new System.EventHandler(this.BtnTerminarFact_Click);
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.BackColor = System.Drawing.Color.Transparent;
+            this.label7.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(90)))), ((int)(((byte)(90)))));
+            this.label7.Location = new System.Drawing.Point(422, 343);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(92, 16);
+            this.label7.TabIndex = 14;
+            this.label7.Text = "Total Factura";
+            // 
+            // TxtTotalFact
+            // 
+            this.TxtTotalFact.BackColor = System.Drawing.SystemColors.HighlightText;
+            this.TxtTotalFact.Location = new System.Drawing.Point(534, 339);
+            this.TxtTotalFact.Name = "TxtTotalFact";
+            this.TxtTotalFact.ReadOnly = true;
+            this.TxtTotalFact.Size = new System.Drawing.Size(124, 20);
+            this.TxtTotalFact.TabIndex = 15;
             // 
             // Factura
             // 

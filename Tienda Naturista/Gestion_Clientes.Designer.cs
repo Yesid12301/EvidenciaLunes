@@ -182,6 +182,7 @@
             // 
             // CbxClienteConsultar
             // 
+            this.CbxClienteConsultar.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.CbxClienteConsultar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(81)))), ((int)(((byte)(59)))));
             this.CbxClienteConsultar.FormattingEnabled = true;
             this.CbxClienteConsultar.Location = new System.Drawing.Point(288, 48);
@@ -226,6 +227,7 @@
             // 
             // CbxEliminarCliente
             // 
+            this.CbxEliminarCliente.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.CbxEliminarCliente.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(81)))), ((int)(((byte)(59)))));
             this.CbxEliminarCliente.FormattingEnabled = true;
             this.CbxEliminarCliente.Location = new System.Drawing.Point(264, 95);
@@ -281,6 +283,7 @@
             // 
             // CbxEditarCliente
             // 
+            this.CbxEditarCliente.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.CbxEditarCliente.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(81)))), ((int)(((byte)(59)))));
             this.CbxEditarCliente.FormattingEnabled = true;
             this.CbxEditarCliente.Location = new System.Drawing.Point(27, 150);

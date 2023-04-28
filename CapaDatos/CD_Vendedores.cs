@@ -31,8 +31,8 @@ namespace CapaDatos
         }
         public DataTable Buscar_vendedores() //PARA BUSCAR VENDEDORES DESDE LA CAPA ENTIDADES VENDEDORES
         {
-            Comando.Parameters.Clear();
             Tabla.Clear();
+            Comando.Parameters.Clear();
             Comando.Connection = conexion.AbrirConexion();
             Comando.CommandText = "Buscar_vendedores";
             Comando.CommandType = CommandType.StoredProcedure;
@@ -43,8 +43,8 @@ namespace CapaDatos
         }
         public DataTable BuscarUnvendedor(CE_Vendedores vendedores) //PARA BUSCAR VENDEDORES DESDE LA CAPA ENTIDADES VENDEDORES
         {
-            Comando.Parameters.Clear();
             Tabla.Clear();
+            Comando.Parameters.Clear();
             Comando.Connection = conexion.AbrirConexion();
             Comando.CommandText = "BuscarUnvendedores";
             Comando.CommandType = CommandType.StoredProcedure;

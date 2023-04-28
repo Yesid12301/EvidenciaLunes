@@ -149,7 +149,7 @@ namespace Tienda_Naturista
                 {
                     if (validacionNumero(TxtCantidad) == false)
                     {
-                        if (validacionletra(TxtDescripcion) == false)
+                        if (validacionVacio(TxtDescripcion) == false)
                         {
                             BtnGuardar.Enabled = true;
                         }
@@ -202,7 +202,7 @@ namespace Tienda_Naturista
                 {
                     if (validacionNumero(TxtCantidad) == false)
                     {
-                        if (validacionletra(TxtDescripcion) == false)
+                        if (validacionVacio(TxtDescripcion) == false)
                         {
                             BtnGuardarCambios.Enabled = true;
                         }
@@ -233,6 +233,9 @@ namespace Tienda_Naturista
         {
             TextBox cajita = cajastxt as TextBox;
             bool error = false;
+            if (string.IsNullOrEmpty(cajita.Text))
+                    error= true;
+            
             foreach (char c in cajita.Text)
             {
                 if (!char.IsDigit(c))
@@ -259,6 +262,22 @@ namespace Tienda_Naturista
             if (error == true)
             {
                 errorProvider1.SetError(cajita, "No dejar vacio");
+            }
+            else
+            {
+                errorProvider1.SetError(cajita, "");
+            }
+            return error;
+        }
+        private bool validacionVacio(object cajastxt)
+        {
+            TextBox cajita = cajastxt as TextBox;
+            bool error = false;
+            if (string.IsNullOrEmpty(cajita.Text)) { error = true; }
+
+            if (error == true)
+            {
+                errorProvider1.SetError(cajita, " No dejar vacio ");
             }
             else
             {

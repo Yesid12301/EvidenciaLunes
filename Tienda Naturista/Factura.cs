@@ -56,21 +56,29 @@ namespace Tienda_Naturista
             {
                 oCE_Productos.Codigo = Convert.ToInt32(CbxProductos.SelectedValue);
                 DataTable dtProducto; dtProducto = oCN_Productos2.MostrarUnProductos(oCE_Productos);
-                oCE_Productos.Descri = dtProducto.Rows[0]["Descripción"].ToString();
-                oCE_Productos.ValUnd = Convert.ToInt32(dtProducto.Rows[0]["Valor_Unidad"].ToString());
+                if (Convert.ToInt32(TxtCantidad.Text) <= Convert.ToInt32(dtProducto.Rows[0]["Cantidad"].ToString()))
+                {
+                    oCE_Productos.Descri = dtProducto.Rows[0]["Descripción"].ToString();
+                    oCE_Productos.ValUnd = Convert.ToInt32(dtProducto.Rows[0]["Valor_Unidad"].ToString());
 
-                DgvFacturaproductos.Rows.Add(oCE_Productos.Codigo,
-                    oCE_Productos.Descri,
-                    oCE_Productos.ValUnd,
-                    Convert.ToInt32(TxtCantidad.Text),
-                    oCE_Productos.ValUnd * Convert.ToInt32(TxtCantidad.Text));
+                    DgvFacturaproductos.Rows.Add(oCE_Productos.Codigo,
+                        oCE_Productos.Descri,
+                        oCE_Productos.ValUnd,
+                        Convert.ToInt32(TxtCantidad.Text),
+                        oCE_Productos.ValUnd * Convert.ToInt32(TxtCantidad.Text));
 
 
-                total += Convert.ToInt32(TxtCantidad.Text) * oCE_Productos.ValUnd;
-                TxtTotalFact.Text = total.ToString();
-                CbxCliente.Enabled = false;
-                TxtCantidad.Text = string.Empty;
-                BtnTerminarFact.Enabled = true;
+                    total += Convert.ToInt32(TxtCantidad.Text) * oCE_Productos.ValUnd;
+                    TxtTotalFact.Text = total.ToString();
+                    CbxCliente.Enabled = false;
+                    TxtCantidad.Text = string.Empty;
+                    BtnTerminarFact.Enabled = true;
+                }
+                else
+                {
+                    MessageBox.Show("No hay la cantidad requerida");
+                }
+                
             }
             else
                 MessageBox.Show("La vcantidad debe ser mayor a 0");;
@@ -95,6 +103,7 @@ namespace Tienda_Naturista
 
             DgvFacturaproductos.Rows.Clear();
             BtnTerminarFact.Enabled = false;
+            CbxCliente.Enabled = true;
 
         }
         private void TxtCantidad_TextChanged(object sender, EventArgs e)

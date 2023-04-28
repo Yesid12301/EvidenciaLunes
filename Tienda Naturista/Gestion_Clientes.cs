@@ -127,7 +127,6 @@ namespace Tienda_Naturista
             (TxtDirecEditarCli.Text) = String.Empty;
             (TxtTelEditarCli.Text) = String.Empty;
             (TxtCorreoEditarCli.Text) = String.Empty;
-            (TxtCorreoEditarCli.Text) = "asda";
         }
 
 
@@ -136,6 +135,7 @@ namespace Tienda_Naturista
         {
             TextBox cajita = cajastxt as TextBox;
             bool error = false;
+            if (string.IsNullOrEmpty(cajita.Text)) { error = true; }
             foreach (char c in cajita.Text)
             {
                 if (!char.IsDigit(c))
@@ -144,7 +144,7 @@ namespace Tienda_Naturista
                     break;
                 }
             }
-            if (error == true)
+            if  (error == true)
             {
                 errorProvider1.SetError(cajita, " solo numeros");
             }
@@ -198,6 +198,7 @@ namespace Tienda_Naturista
             bool error = false;
 
             if (!Regex.IsMatch(cajita.Text, @"^[^@\s]+@[^@\s]+\.[^@\s]+$")) { error = true; }
+
             if (error == true)
             {
                 errorProvider1.SetError(cajita, " Solo correos ");

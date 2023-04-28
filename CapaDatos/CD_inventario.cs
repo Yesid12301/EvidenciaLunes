@@ -15,9 +15,10 @@ namespace CapaDatos
         DataTable Tabla = new DataTable();
         SqlCommand Comando = new SqlCommand();
 
-        public DataTable BuscarInventario()//Mostramos todos los Clientes
+        public DataTable BUSCARINVENTARIOS()//Mostramos todos los Clientes
         {
             Tabla.Clear();
+            Comando.Parameters.Clear();
             Comando.Connection = conexion.AbrirConexion();
             Comando.CommandText = "SP_BUSCARINVENTARIOS";
             Comando.CommandType = CommandType.StoredProcedure;
@@ -26,5 +27,20 @@ namespace CapaDatos
             conexion.CerrarConexion();
             return Tabla;
         }
+        public DataTable BUSCARINVENTARIO(int codigo)//Mostramos todos los Clientes
+        {
+            Tabla.Clear();
+            Comando.Parameters.Clear();
+            Comando.Connection = conexion.AbrirConexion();
+            Comando.CommandText = "SP_BUSCARINVENTARIO";
+            Comando.Parameters.AddWithValue("@Prod", codigo);
+            Comando.CommandType = CommandType.StoredProcedure;
+            Leer = Comando.ExecuteReader();
+            Tabla.Load(Leer);
+            conexion.CerrarConexion();
+            return Tabla;
+        }
+
+
     }
 }

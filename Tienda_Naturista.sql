@@ -1,13 +1,33 @@
-﻿create DATABASE NaturVida
+﻿create database NaturVida
 USE NaturVida
 
 --Vendedores
 CREATE TABLE Vendedores(
 Codigo INT PRIMARY KEY,
-Usuario VARCHAR(15),
+Usuario VARCHAR(15) UNIQUE,
 Contraseña VARCHAR(250),
 Nombre VARCHAR(50),
 )
+go
+
+
+--Parte Cliente
+CREATE TABLE Cliente(
+Documento INT PRIMARY KEY,
+Nombre Varchar(250),
+Direccion Varchar(250),
+Telefono varchar(10),
+Correo Varchar(250) UNIQUE
+)
+go
+
+CREATE TABLE Productos(
+Codigo INT PRIMARY KEY,
+Descripción VARCHAR(50) UNIQUE,
+Valor_Unidad INT,
+Cantidad INT
+)
+go
 --Parte Facturacion
 CREATE TABLE Factura(
 IdFactu INT IDENTITY(1,1) PRIMARY KEY,
@@ -18,23 +38,7 @@ Codigo_Vendedor INT
 FOREIGN KEY (Documento_Cliente) REFERENCES Cliente (Documento) on update cascade on delete cascade ,
 FOREIGN KEY (Codigo_Vendedor) REFERENCES Vendedores (Codigo) on update cascade on delete cascade 
 )
-
---Parte Cliente
-CREATE TABLE Cliente(
-Documento INT PRIMARY KEY,
-Nombre Varchar(250),
-Direccion Varchar(250),
-Telefono varchar(10),
-Correo Varchar(250) UNIQUE
-)
-
-CREATE TABLE Productos(
-Codigo INT PRIMARY KEY,
-Descripción VARCHAR(50),
-Valor_Unidad INT,
-Cantidad INT
-)
-
+go
 --Factura detalle
 CREATE TABLE Factura_Detalle(
 Id INT IDENTITY(1,1) PRIMARY KEY,
@@ -46,7 +50,7 @@ Valor_Unidad INT
 FOREIGN KEY (Numero_Factura) REFERENCES Factura(IdFactu) on update cascade on delete cascade,
 FOREIGN KEY (Codigo_Productos) REFERENCES Productos (Codigo) on update cascade on delete cascade
 )
-
+go
 -- Datos
 
 INSERT INTO Vendedores VALUES -- Contraseña admin es admin
@@ -172,18 +176,18 @@ CREATE PROCedure SP_INSERTARPRODUCT
 @Cantida INT
 AS
 INSERT INTO Productos VALUES(@Codigo,@Descri,@ValUnd,@Cantida)
-
+go
 
 create procedure BuscarTodosproductos
 as 
 select * from Productos
-
+go
 
 create proc BuscarUnproducto
 @Codigo int
 as 
 select * from Productos where Codigo=@Codigo
-
+go
 
 
 --ACTUALIZAR
@@ -196,7 +200,7 @@ CREATE PROC SP_ACTUALIZARPROD
 AS
 UPDATE Productos SET Codigo =@CodNew, Descripción = @Descri, Valor_Unidad = @ValUnd,Cantidad = @Cant
 WHERE Codigo = @Cod
-
+go
 
 --ELIMINAR
 CREATE PROC SP_ELIMINARPROD
@@ -302,6 +306,7 @@ create proc  Buscar_vendedores
 as 
 select * from Vendedores
 go
+
 create proc  BuscarUnvendedores
 @Codigo int
 as 
@@ -345,23 +350,14 @@ go
 CREATE PROC SP_BUSCARINVENTARIO
 @Prod INT
 AS
-SELECT P.Descripción,P.Cantidad,SUM(F.Cantidad) AS 'Vendido' FROM Factura_Detalle AS F
+SELECT P.Codigo,P.Descripción,P.Cantidad,SUM(F.Cantidad) AS 'Vendido' FROM Factura_Detalle AS F
 JOIN Productos AS P on F.Codigo_Productos = P.Codigo
-where P.Codigo = @Prod GROUP BY P.Descripción,P.Cantidad
+where P.Codigo = @Prod GROUP BY P.Descripción,P.Cantidad,P.Codigo
 go
 
 CREATE PROC SP_BUSCARINVENTARIOS
 AS
-SELECT P.Descripción,P.Cantidad,SUM(F.Cantidad) AS 'Vendido' FROM Factura_Detalle AS F
+SELECT P.Codigo, P.Descripción,P.Cantidad,SUM(F.Cantidad) AS 'Vendido' FROM Factura_Detalle AS F
 JOIN Productos AS P on F.Codigo_Productos = P.Codigo
-GROUP BY P.Descripción,P.Cantidad
+GROUP BY P.Descripción,P.Cantidad,P.Codigo
 go
-
-
-
-
-
-select * from factura
-select * from Factura_Detalle
-
-select * from Vendedores

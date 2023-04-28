@@ -261,6 +261,58 @@ namespace Tienda_Naturista
                 else { BtnGuardarCambModifVen.Enabled = false; }
             }
             else { BtnGuardarCambModifVen.Enabled = false; }
-        }           
+        }
+
+        private void TxtUsuarioVen_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (char.IsSeparator(e.KeyChar))
+            {
+                e.Handled = true;
+            }
+            else
+            {
+                e.Handled = false;
+            }
+        }
+
+        private void TxtUsuarioModifVen_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (char.IsSeparator(e.KeyChar))
+            {
+                e.Handled = true;
+            }
+            else
+            {
+                e.Handled = false;
+            }
+        }
+
+        private void TxtContraseñaven_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (char.IsSeparator(e.KeyChar))
+            {
+                e.Handled = true;
+                errorProvider1.SetError(BtnGuardarVen, "No se puede agregar espacios en una contraseña");
+            }
+            else
+            {
+                e.Handled = false;
+                errorProvider1.SetError(BtnGuardarVen, "");
+            }
+        }
+
+        private void TxtContraModifVen_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (char.IsSeparator(e.KeyChar))
+            {
+                e.Handled = true;
+                errorProvider1.SetError(BtnGuardarCambModifVen, "No se puede agregar espacios en una contraseña");
+            }
+            else
+            {
+                e.Handled = false;
+                errorProvider1.SetError(BtnGuardarCambModifVen, "");
+            }
+        }
     }
 }

@@ -117,3 +117,35 @@ F:\Programacion\C#\PROYECTOS_MIOS\GRAFICA\Tienda\EvidenciaLunes\Tienda Naturista
 F:\Programacion\C#\PROYECTOS_MIOS\GRAFICA\Tienda\EvidenciaLunes\Tienda Naturista\obj\Debug\Tienda Naturista.csproj.CopyComplete
 F:\Programacion\C#\PROYECTOS_MIOS\GRAFICA\Tienda\EvidenciaLunes\Tienda Naturista\obj\Debug\Tienda Naturista.exe
 F:\Programacion\C#\PROYECTOS_MIOS\GRAFICA\Tienda\EvidenciaLunes\Tienda Naturista\obj\Debug\Tienda Naturista.pdb
+E:\Programacion\C#\PROYECTOS_MIOS\GRAFICA\Tienda\EvidenciaLunes\Tienda Naturista\bin\Debug\Tienda Naturista.exe.config
+E:\Programacion\C#\PROYECTOS_MIOS\GRAFICA\Tienda\EvidenciaLunes\Tienda Naturista\bin\Debug\Tienda Naturista.exe.manifest
+E:\Programacion\C#\PROYECTOS_MIOS\GRAFICA\Tienda\EvidenciaLunes\Tienda Naturista\bin\Debug\Tienda Naturista.application
+E:\Programacion\C#\PROYECTOS_MIOS\GRAFICA\Tienda\EvidenciaLunes\Tienda Naturista\bin\Debug\Tienda Naturista.exe
+E:\Programacion\C#\PROYECTOS_MIOS\GRAFICA\Tienda\EvidenciaLunes\Tienda Naturista\bin\Debug\Tienda Naturista.pdb
+E:\Programacion\C#\PROYECTOS_MIOS\GRAFICA\Tienda\EvidenciaLunes\Tienda Naturista\bin\Debug\CapaEntidades.dll
+E:\Programacion\C#\PROYECTOS_MIOS\GRAFICA\Tienda\EvidenciaLunes\Tienda Naturista\bin\Debug\CapaNegocios.dll
+E:\Programacion\C#\PROYECTOS_MIOS\GRAFICA\Tienda\EvidenciaLunes\Tienda Naturista\bin\Debug\CapaDatos.dll
+E:\Programacion\C#\PROYECTOS_MIOS\GRAFICA\Tienda\EvidenciaLunes\Tienda Naturista\bin\Debug\CapaEntidades.pdb
+E:\Programacion\C#\PROYECTOS_MIOS\GRAFICA\Tienda\EvidenciaLunes\Tienda Naturista\bin\Debug\CapaNegocios.pdb
+E:\Programacion\C#\PROYECTOS_MIOS\GRAFICA\Tienda\EvidenciaLunes\Tienda Naturista\bin\Debug\CapaDatos.pdb
+E:\Programacion\C#\PROYECTOS_MIOS\GRAFICA\Tienda\EvidenciaLunes\Tienda Naturista\obj\Debug\Tienda Naturista.csproj.AssemblyReference.cache
+E:\Programacion\C#\PROYECTOS_MIOS\GRAFICA\Tienda\EvidenciaLunes\Tienda Naturista\obj\Debug\Tienda Naturista.csproj.SuggestedBindingRedirects.cache
+E:\Programacion\C#\PROYECTOS_MIOS\GRAFICA\Tienda\EvidenciaLunes\Tienda Naturista\obj\Debug\Tienda_Naturista.Factura.resources
+E:\Programacion\C#\PROYECTOS_MIOS\GRAFICA\Tienda\EvidenciaLunes\Tienda Naturista\obj\Debug\Tienda_Naturista.Gestion_Clientes.resources
+E:\Programacion\C#\PROYECTOS_MIOS\GRAFICA\Tienda\EvidenciaLunes\Tienda Naturista\obj\Debug\Tienda_Naturista.Gestion_Inventario.resources
+E:\Programacion\C#\PROYECTOS_MIOS\GRAFICA\Tienda\EvidenciaLunes\Tienda Naturista\obj\Debug\Tienda_Naturista.Gestion_Vendedores.resources
+E:\Programacion\C#\PROYECTOS_MIOS\GRAFICA\Tienda\EvidenciaLunes\Tienda Naturista\obj\Debug\Tienda_Naturista.Using.resources
+E:\Programacion\C#\PROYECTOS_MIOS\GRAFICA\Tienda\EvidenciaLunes\Tienda Naturista\obj\Debug\Tienda_Naturista.Gestion.resources
+E:\Programacion\C#\PROYECTOS_MIOS\GRAFICA\Tienda\EvidenciaLunes\Tienda Naturista\obj\Debug\Tienda_Naturista.Gestion_Productos.resources
+E:\Programacion\C#\PROYECTOS_MIOS\GRAFICA\Tienda\EvidenciaLunes\Tienda Naturista\obj\Debug\Tienda_Naturista.Properties.Resources.resources
+E:\Programacion\C#\PROYECTOS_MIOS\GRAFICA\Tienda\EvidenciaLunes\Tienda Naturista\obj\Debug\Tienda Naturista.csproj.GenerateResource.cache
+E:\Programacion\C#\PROYECTOS_MIOS\GRAFICA\Tienda\EvidenciaLunes\Tienda Naturista\obj\Debug\Tienda Naturista.csproj.CoreCompileInputs.cache
+E:\Programacion\C#\PROYECTOS_MIOS\GRAFICA\Tienda\EvidenciaLunes\Tienda Naturista\obj\Debug\Tienda Naturista.exe.manifest
+E:\Programacion\C#\PROYECTOS_MIOS\GRAFICA\Tienda\EvidenciaLunes\Tienda Naturista\obj\Debug\Tienda Naturista.application
+E:\Programacion\C#\PROYECTOS_MIOS\GRAFICA\Tienda\EvidenciaLunes\Tienda Naturista\obj\Debug\Tienda Naturista.csproj.CopyComplete
+E:\Programacion\C#\PROYECTOS_MIOS\GRAFICA\Tienda\EvidenciaLunes\Tienda Naturista\obj\Debug\Tienda Naturista.exe
+E:\Programacion\C#\PROYECTOS_MIOS\GRAFICA\Tienda\EvidenciaLunes\Tienda Naturista\obj\Debug\Tienda Naturista.pdb
+E:\Programacion\C#\PROYECTOS_MIOS\GRAFICA\Tienda\EvidenciaLunes\Tienda Naturista\bin\Debug\BouncyCastle.Crypto.dll
+E:\Programacion\C#\PROYECTOS_MIOS\GRAFICA\Tienda\EvidenciaLunes\Tienda Naturista\bin\Debug\itextsharp.dll
+E:\Programacion\C#\PROYECTOS_MIOS\GRAFICA\Tienda\EvidenciaLunes\Tienda Naturista\bin\Debug\itextsharp.xml
+E:\Programacion\C#\PROYECTOS_MIOS\GRAFICA\Tienda\EvidenciaLunes\Tienda Naturista\obj\Debug\Tienda Naturista.csproj.ResolveComReference.cache

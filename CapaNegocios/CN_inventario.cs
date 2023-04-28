@@ -12,10 +12,16 @@ namespace CapaNegocios
     {
         CD_inventario oCD_inventario = new CD_inventario();
 
-        public DataTable BuscarInventario()//Mostramos todos los Clientes
+        public DataTable BUSCARINVENTARIOS()//Mostramos todos los Clientes
         {
             DataTable dt= new DataTable();
-            dt = oCD_inventario.BuscarInventario();
+            dt = oCD_inventario.BUSCARINVENTARIOS();
+            return dt;
+        }
+        public DataTable BUSCARINVENTARIO(int codigo)//Mostramos todos los Clientes
+        {
+            DataTable dt = new DataTable();
+            dt = oCD_inventario.BUSCARINVENTARIO(codigo);
             return dt;
         }
     }

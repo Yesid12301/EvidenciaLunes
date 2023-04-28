@@ -29,14 +29,11 @@ namespace Tienda_Naturista
                 Gestion gestion = new Gestion();
                 gestion.ShowDialog();
                 TxtUsuario.Text = string.Empty;
-                TxtContraseña.Text = string.Empty;
-                
+                TxtContraseña.Text = string.Empty;              
             }
-
             else
             {
-                MessageBox.Show("Datos incorrectos");
-
+                MessageBox.Show("Datos incorrectos");              
             }
         }
         private void TxtContraseña_KeyPress(object sender, KeyPressEventArgs e)
